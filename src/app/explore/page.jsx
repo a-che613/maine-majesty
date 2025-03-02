@@ -13,15 +13,19 @@ const ExplorePage = () => {
       pricing: [
         {
           currency: "US($)",
-          price: "$1100"
+          price: "$780"
         },
         {
           currency: "NZ($)",
-          price: "$1290"
+          price: "$740"
         },
         {
           currency: "UK(£)",
-          price: "£952"
+          price: "£800"
+        },
+        {
+          currency: "AU($)",
+          price: "$760"
         },
       ]
     },
@@ -32,15 +36,19 @@ const ExplorePage = () => {
       pricing: [
         {
           currency: "US($)",
-          price: "$1120"
+          price: "$700"
         },
         {
           currency: "NZ($)",
-          price: "$1200"
+          price: "$680"
         },
         {
           currency: "UK(£)",
-          price: "£900"
+          price: "£780"
+        },
+        {
+          currency: "AU($)",
+          price: "$730"
         },
       ]
     },
@@ -51,15 +59,19 @@ const ExplorePage = () => {
       pricing: [
         {
           currency: "US($)",
-          price: "$1110"
+          price: "$780"
         },
         {
           currency: "NZ($)",
-          price: "$1300"
+          price: "$740"
         },
         {
           currency: "UK(£)",
-          price: "£962"
+          price: "£800"
+        },
+        {
+          currency: "AU($)",
+          price: "$760"
         },
       ]
     },
@@ -70,15 +82,19 @@ const ExplorePage = () => {
       pricing: [
         {
           currency: "US($)",
-          price: "$1100"
+          price: "$680"
         },
         {
           currency: "NZ($)",
-          price: "$1300"
+          price: "$640"
         },
         {
           currency: "UK(£)",
-          price: "£852"
+          price: "£700"
+        },
+        {
+          currency: "AU($)",
+          price: "$650"
         },
       ]
     },
@@ -89,15 +105,19 @@ const ExplorePage = () => {
       pricing: [
         {
           currency: "US($)",
-          price: "$1030"
+          price: "$750"
         },
         {
           currency: "NZ($)",
-          price: "$1190"
+          price: "$700"
         },
         {
           currency: "UK(£)",
-          price: "£942"
+          price: "£799"
+        },
+        {
+          currency: "AU($)",
+          price: "$720"
         },
       ]
     },
@@ -108,15 +128,19 @@ const ExplorePage = () => {
       pricing: [
         {
           currency: "US($)",
-          price: "$1050"
+          price: "$699"
         },
         {
           currency: "NZ($)",
-          price: "$1290"
+          price: "$650"
         },
         {
           currency: "UK(£)",
-          price: "£852"
+          price: "£720"
+        },
+        {
+          currency: "AU($)",
+          price: "$670"
         },
       ]
     },
@@ -127,15 +151,19 @@ const ExplorePage = () => {
       pricing: [
         {
           currency: "US($)",
-          price: "$1200"
+          price: "$700"
         },
         {
           currency: "NZ($)",
-          price: "$1400"
+          price: "$680"
         },
         {
           currency: "UK(£)",
-          price: "£900"
+          price: "£780"
+        },
+        {
+          currency: "AU($)",
+          price: "$730"
         },
       ]
     },
@@ -146,15 +174,19 @@ const ExplorePage = () => {
       pricing: [
         {
           currency: "US($)",
-          price: "$1000"
+          price: "$780"
         },
         {
           currency: "NZ($)",
-          price: "$1100"
+          price: "$740"
         },
         {
           currency: "UK(£)",
-          price: "£960"
+          price: "£800"
+        },
+        {
+          currency: "AU($)",
+          price: "$760"
         },
       ]
     },
@@ -176,19 +208,19 @@ const ExplorePage = () => {
                   height={300}
                   style={{ width: "100%", height: "100%" }}
                   alt="hero image"
-                  className="object-cover"
+                  className="object-cover max-md:h-auto"
                 />
               </div>
               <div className="w-full flex flex-col gap-[10px]">
                 <div className="h-[40px] w-full flex items-center justify-center bg-[#2A3B8F] bg-opacity-30 text-[#2A3B8F] font-medium">{k.name}</div>
-                <div className="grid grid-cols-3">
+                <div className="grid grid-cols-4">
                   {
                     k.pricing.map((p, index) => (
                       <div key={index} className="flex items-center justify-center font-bold">{p.currency}</div>
                     ))
                   }
                 </div>
-                <div className="grid grid-cols-3">
+                <div className="grid grid-cols-4">
                   {
                     k.pricing.map((p, index) => (
                       <div key={index} className="flex items-center justify-center">{p.price}</div>
